@@ -35,24 +35,8 @@
 <body class="font-lato">
     <header class="container mx-auto">
         <!--Nav section  -->
-        <div class="navbar bg-base-100 lg:bg-primary-clr rounded-[60px] my-12 px-12 flex justify-between">
-
-            <div class="navbar hidden lg:flex text-white  ">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li>
-                        <a>About</a>
-                    </li>
-                    <li><a>Shop</a></li>
-                    </li>
-                    <li><a>All fruits</a></li>
-                </ul>
-            </div>
-            <div class="navbar-center lg:flex justify-center items-center gap-3">
-                <img src="images/logo.png" alt="" class="h-[27px] w-[30px]">
-                <h3 class="text-xl font-bold lg:text-white text-3xl">Fruit Burst</h3>
-            </div>
-            <div class="navbar-start  ">
+        <div class="navbar bg-base-100 mx-4 px-0 lg:bg-primary-clr rounded-[60px] my-12 px-12 flex justify-between">
+            <div class="order-1 lg:hidden navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -67,13 +51,25 @@
                         <li><a>About</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
+    
                     </ul>
                 </div>
+    
             </div>
-
-
-            <div class="navbar-end  ">
-
+    
+            <div class="navbar-center hidden lg:flex text-white ">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar lg:flex justify-center items-center gap-3">
+                <img src="images/logo.png" alt="" class="h-[27px] w-[30px]">
+                <h3 class="text-xl font-bold lg:text-white text-3xl">Fruit Burst</h3>
+            </div>
+            <div class="navbar-end">
                 <div class=" hidden lg:flex justify-end items-center  ">
                     <!-- Search input field -->
                     <div class="relative">
@@ -87,7 +83,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
     <main class="container mx-auto">
@@ -96,7 +91,7 @@
             <div class="carousel w-full">
                 <!-- Slider One -->
                 <div id="slide1" class="carousel-item w-full">
-                    <div class="hero" style="background-image: url(images/banner1.png);">
+                    <div class="hero" style="background-image: url(images/banner1.png); ">
                         <div class="overlay absolute inset-0 bg-black opacity-50"></div>
                           <div class="text-center relative z-10">
                             <h1 class="text-2xl lg:text-7xl font-extrabold mb-6  text-white">Exotic tastes at your <br> doorstep</h1>
